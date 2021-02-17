@@ -4,19 +4,28 @@ public class Kamera {
     private String modellName;
     public Objektiv objektiv;
 
-    public Kamera (String herstellerName, String modellName) {
+    public Kamera(String herstellerName, String modellName) {
         this.herstellerName = herstellerName;
         this.modellName = modellName;
     }
 
+    // Methoden
+    public void KameraInfo() {
+        System.out.printf(" Diese Kamera ist eine %s mit der Modellbezeichnung %s und dem Objektiv von %s", herstellerName, modellName,  objektiv.getErzeuger());
+    }
 
+    public void fotografieren() {
+        System.out.println();
+        System.out.println(" Es wurde ein Foto gemacht mit folgenden Spezifikationen: ");
+        KameraInfo();
+    }
 
     // Getter
     public String getHerstellerName() {
         return herstellerName;
     }
 
-    public String getModellName(){
+    public String getModellName() {
         return modellName;
     }
 
@@ -35,16 +44,6 @@ public class Kamera {
 
     public void setModellName(String modellName) {
         this.modellName = modellName;
-    }
-
-    // Methoden
-    public void printKameraInfo() {
-        System.out.printf(" Diese Kamera ist eine " + getHerstellerName() + " mit der Modellbezeichnung " + getModellName() + " und dem Objektiv von " + objektiv.getErzeuger() + ". ");
-    }
-
-    public void fotografieren() {
-        System.out.println(" Es wurde ein Foto gemacht mit folgenden Spezifikationen: ");
-        printKameraInfo();
     }
 
 }

@@ -10,7 +10,12 @@ public class Objektiv {
         this.brennweiteMax = brennweiteMax;
     }
 
-   // Setter
+    // Methode
+    public void ObjektivInfo() {
+        System.out.printf(". Diese Objektiv hat eine Mindestbrennweite von %s mm & eine maximale Brennweite von %s mm.", brennweiteMin, brennweiteMax);
+        System.out.println("");
+    }
+        // Setter
     public void setErzeuger(String erzeuger) {
         this.erzeuger = erzeuger;
     }
@@ -28,7 +33,7 @@ public class Objektiv {
         return erzeuger;
     }
 
-    public int getbrennweiteMin(){
+    public int getbrennweiteMin() {
         return brennweiteMin;
     }
 
@@ -36,11 +41,11 @@ public class Objektiv {
         return brennweiteMax;
     }
 
-    // Methode
-    public void printObjektivInfo() {
-        System.out.println("Diese Objektiv hat eine Mindestbrennweite von " + getbrennweiteMin() + "mm & eine maximale Brennweite von " + getBrennweiteMax() + "mm.");
-    }
 
 }
+
+
+
+
 
 

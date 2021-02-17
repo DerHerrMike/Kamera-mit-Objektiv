@@ -13,24 +13,16 @@ public class KameraTest {
         // Methode aufrufen
         kam1.setObjektiv(obj1);
         kam1.fotografieren();
-        obj1.printObjektivInfo();
-
-        System.out.println("");
+        kam1.getObjektiv().ObjektivInfo();
 
         kam2.setObjektiv(obj3);
         kam2.fotografieren();
-        obj3.printObjektivInfo();
-
-        System.out.println();
+        kam2.getObjektiv().ObjektivInfo();
 
         kam1.setObjektiv(obj2);
         kam1.fotografieren();
-        obj2.printObjektivInfo();
+        kam1.getObjektiv().ObjektivInfo();
 
-        System.out.println();
     }
-
-
-
 }
 
